@@ -1,6 +1,6 @@
 <template>
 
- <!--  <nav class="navbar navbar-dark navbar-expand-lg bg-dark ">
+ <nav class="navbar navbar-dark navbar-expand-lg bg-dark ">
     <div class="container-fluid">
       <h1 class="navbar-brand text-white">PROYECTO FINAL CRUD</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -15,15 +15,12 @@
         </div>
       </div>
     </div>
-  </nav> -->
-
-
-
-  <router-view />
+  </nav>
 </template>
+
 <script>
 export default {
-  name: 'app',
+  name: 'vista',
   methods: {
     home() {
       this.$router.push('/home')
@@ -39,23 +36,3 @@ export default {
   }
 }
 </script>
-
-<style>
-#app {
-  font-family:'Times New Roman', Times, serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-
-
-}
-
-.nav-link {
-  cursor: pointer;
-}
-</style>
-<!-- <form class="container-fluid justify-content-center">
-  <button class="btn btn-outline-success me-2" type="button" @click="home">Mostrar Datos</button>
-  <button class="btn btn-outline-success me-2" type="button" @click="about">Agregar Datos</button>
-</form> -->
